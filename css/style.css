@@ -874,6 +874,51 @@ textarea {
   accent-color: var(--primary);
 }
 
+.privacy-notice {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  background: #f8fafc;
+}
+
+.privacy-notice strong {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--dark);
+  font-size: 16px;
+}
+
+.privacy-notice dl {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+}
+
+.privacy-notice dl div {
+  display: grid;
+  grid-template-columns: 104px minmax(0, 1fr);
+  gap: 14px;
+}
+
+.privacy-notice dt {
+  color: var(--dark);
+  font-weight: 800;
+}
+
+.privacy-notice dd,
+.privacy-notice p {
+  margin: 0;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.privacy-notice p {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
 .form-message {
   min-height: 24px;
   margin: 0;
@@ -981,4 +1026,8 @@ textarea {
   .consult-form { padding-inline: 22px; }
   .consult-intro h2 { font-size: 28px; }
   .form-grid { grid-template-columns: 1fr; }
+  .privacy-notice dl div {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
 }
